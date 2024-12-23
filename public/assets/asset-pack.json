@@ -1,0 +1,313 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/bg.png",
+                "type": "image",
+                "key": "bg"
+            },
+            {
+                "url": "assets/images/bg_popup.png",
+                "type": "image",
+                "key": "bg_popup"
+            },
+            {
+                "url": "assets/images/blocks/block_1.png",
+                "type": "image",
+                "key": "block_1"
+            },
+            {
+                "url": "assets/images/boss/boss_1.png",
+                "type": "image",
+                "key": "boss_1"
+            },
+            {
+                "url": "assets/images/boss/boss_2.png",
+                "type": "image",
+                "key": "boss_2"
+            },
+            {
+                "url": "assets/images/boss/boss_3.png",
+                "type": "image",
+                "key": "boss_3"
+            },
+            {
+                "url": "assets/images/boss/boss_4.png",
+                "type": "image",
+                "key": "boss_4"
+            },
+            {
+                "url": "assets/images/boss/boss_5.png",
+                "type": "image",
+                "key": "boss_5"
+            },
+            {
+                "url": "assets/images/boss/boss_6.png",
+                "type": "image",
+                "key": "boss_6"
+            },
+            {
+                "url": "assets/images/boss/boss_7.png",
+                "type": "image",
+                "key": "boss_7"
+            },
+            {
+                "url": [
+                    "assets/sounds/boss-kill.mp3"
+                ],
+                "type": "audio",
+                "key": "boss-kill"
+            },
+            {
+                "url": "assets/images/bossinnerBar.png",
+                "type": "image",
+                "key": "bossinnerBar"
+            },
+            {
+                "url": "assets/images/bossOuterbar.png",
+                "type": "image",
+                "key": "bossOuterbar"
+            },
+            {
+                "url": "assets/images/buttons/btn_play.png",
+                "type": "image",
+                "key": "btn_play"
+            },
+            {
+                "url": "assets/images/buttons/btn_replay.png",
+                "type": "image",
+                "key": "btn_replay"
+            },
+            {
+                "url": "assets/images/bullet.png",
+                "type": "image",
+                "key": "bullet"
+            },
+            {
+                "url": [
+                    "assets/sounds/bullet-kill.mp3"
+                ],
+                "type": "audio",
+                "key": "bullet-kill"
+            },
+            {
+                "url": "assets/images/home/close_btn.png",
+                "type": "image",
+                "key": "close_btn"
+            },
+            {
+                "url": "assets/images/coin.png",
+                "type": "image",
+                "key": "coin"
+            },
+            {
+                "url": "assets/images/coin-base.png",
+                "type": "image",
+                "key": "coin-base"
+            },
+            {
+                "url": "assets/images/fill-base.png",
+                "type": "image",
+                "key": "fill-base"
+            },
+            {
+                "url": "assets/images/fill-line.png",
+                "type": "image",
+                "key": "fill-line"
+            },
+            {
+                "url": "assets/images/particles/fire.png",
+                "type": "image",
+                "key": "fire"
+            },
+            {
+                "url": "assets/images/particles/fire2.png",
+                "type": "image",
+                "key": "fire2"
+            },
+            {
+                "url": "assets/images/particles/g_y.png",
+                "type": "image",
+                "key": "g_y"
+            },
+            {
+                "url": [
+                    "assets/sounds/game-over.mp3"
+                ],
+                "type": "audio",
+                "key": "game-over"
+            },
+            {
+                "url": "assets/images/home/home_btn.png",
+                "type": "image",
+                "key": "home_btn"
+            },
+            {
+                "url": "assets/images/home/info_bg.png",
+                "type": "image",
+                "key": "info_bg"
+            },
+            {
+                "url": "assets/images/home/info_btn.png",
+                "type": "image",
+                "key": "info_btn"
+            },
+            {
+                "url": "assets/images/home/info_ui_base.png",
+                "type": "image",
+                "key": "info_ui_base"
+            },
+            {
+                "url": "assets/images/innerBar.png",
+                "type": "image",
+                "key": "innerBar"
+            },
+            {
+                "url": "assets/images/insects/insects_1.png",
+                "type": "image",
+                "key": "insects_1"
+            },
+            {
+                "url": "assets/images/insects/insects_2.png",
+                "type": "image",
+                "key": "insects_2"
+            },
+            {
+                "url": "assets/images/lbl_completed.png",
+                "type": "image",
+                "key": "lbl_completed"
+            },
+            {
+                "url": "assets/images/lbl_gameover.png",
+                "type": "image",
+                "key": "lbl_gameover"
+            },
+            {
+                "url": "assets/images/outerBar.png",
+                "type": "image",
+                "key": "outerBar"
+            },
+            {
+                "url": "assets/images/particles/particle_0.png",
+                "type": "image",
+                "key": "particle_0"
+            },
+            {
+                "url": "assets/images/particles/particle_1.png",
+                "type": "image",
+                "key": "particle_1"
+            },
+            {
+                "url": "assets/images/particles/particle_10.png",
+                "type": "image",
+                "key": "particle_10"
+            },
+            {
+                "url": "assets/images/particles/particle_2.png",
+                "type": "image",
+                "key": "particle_2"
+            },
+            {
+                "url": "assets/images/particles/particle_3.png",
+                "type": "image",
+                "key": "particle_3"
+            },
+            {
+                "url": "assets/images/particles/particle_4.png",
+                "type": "image",
+                "key": "particle_4"
+            },
+            {
+                "url": "assets/images/particles/particle_5.png",
+                "type": "image",
+                "key": "particle_5"
+            },
+            {
+                "url": "assets/images/particles/particle_6.png",
+                "type": "image",
+                "key": "particle_6"
+            },
+            {
+                "url": "assets/images/particles/particle_7.png",
+                "type": "image",
+                "key": "particle_7"
+            },
+            {
+                "url": "assets/images/particles/particle_8.png",
+                "type": "image",
+                "key": "particle_8"
+            },
+            {
+                "url": "assets/images/particles/particle_9.png",
+                "type": "image",
+                "key": "particle_9"
+            },
+            {
+                "url": "assets/images/player.png",
+                "type": "image",
+                "key": "player"
+            },
+            {
+                "url": "assets/images/player2.png",
+                "type": "image",
+                "key": "player2"
+            },
+            {
+                "url": "assets/images/particles/red.png",
+                "type": "image",
+                "key": "red"
+            },
+            {
+                "url": "assets/images/particles/red-fire.png",
+                "type": "image",
+                "key": "red-fire"
+            },
+            {
+                "url": "assets/images/ring.png",
+                "type": "image",
+                "key": "ring"
+            },
+            {
+                "url": "assets/images/home/sound_off.png",
+                "type": "image",
+                "key": "sound_off"
+            },
+            {
+                "url": "assets/images/home/sound_on.png",
+                "type": "image",
+                "key": "sound_on"
+            },
+            {
+                "url": "assets/images/star.png",
+                "type": "image",
+                "key": "star"
+            },
+            {
+                "url": "assets/images/lifes/heart.png",
+                "type": "image",
+                "key": "heart"
+            },
+            {
+                "url": [
+                    "assets/sounds/tap.mp3"
+                ],
+                "type": "audio",
+                "key": "tap"
+            },
+            {
+                "url": [
+                    "assets/sounds/weapon-shoot.mp3"
+                ],
+                "type": "audio",
+                "key": "weapon-shoot"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
