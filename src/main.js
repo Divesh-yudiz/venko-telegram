@@ -29,9 +29,9 @@ window.addEventListener('load', function () {
 		scene: [Boot, Preload, Home, Level],
 	});
 
-	console.log = () => {};
-	console.warn = () => {};
-	console.error = () => {};
+	// console.log = () => {};
+	// console.warn = () => {};
+	// console.error = () => {};
 });
 
 class Boot extends Phaser.Scene {

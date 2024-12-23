@@ -536,6 +536,8 @@ export default class Level extends Phaser.Scene {
 	}
 
 	setLife = (life) => {
+		// Clear existing container if it exists
+
 		const container_lifes = this.add.container(0, 0);
 		this.container_header.add(container_lifes);
 		const heartPositions = [100, 190, 280];
@@ -547,6 +549,7 @@ export default class Level extends Phaser.Scene {
 			this.hearts.push(heart);
 		}
 		this.container_lifes = container_lifes;
+
 	}
 
 	updateScoreBar = () => {
@@ -673,16 +676,20 @@ export default class Level extends Phaser.Scene {
 		});
 	}
 	gameOver = (player) => {
+		// Add check for invulnerability
+		if (player.isInvulnerable) {
+			return;
+		}
+
 		if (localStorage.getItem('dragon-force-sound') === 'true') {
 			this.oSoundManager.playSound(this.oSoundManager.gameOverSound, false);
 		}
 
-		// Remove one heart
-		this.hearts.pop();
-		this.setLife(this.hearts.length);
+		this.decreaseLife();
 
-		// If no hearts left, trigger full game over
+		// Check if player still has lives
 		if (this.hearts.length <= 0) {
+			// Game over - no lives remaining
 			player.destroy();
 			this.isGameOver = true;
 			localStorage.setItem('dragon_coins', this.nCoins);
@@ -696,24 +703,56 @@ export default class Level extends Phaser.Scene {
 				lifespan: 3000,
 				frequency: 10,
 			});
+
 			emitter.explode(35, player.x, player.y);
 			this.isPopUp = true;
 			this.stopFire();
-
 			setTimeout(() => {
 				this.showPopup();
 				emitter.remove();
 			}, 500);
 		} else {
-			// Player still has lives left - reset position
-			console.log("gameOver");
-			player.setPosition(540, 1500); // Reset to starting position
-			this.stopFire();
+			// Set player as invulnerable
+			player.isInvulnerable = true;
 
-			// Make player briefly invulnerable
-			player.alpha = 0.5;
-			this.time.delayedCall(1500, () => {
-				player.alpha = 1;
+			// Player still has lives - make temporarily invulnerable
+			player.setAlpha(0.5);
+			player.setImmovable(true);
+
+			// Reset player position
+			this.tweens.add({
+				targets: player,
+				x: 540,
+				y: 1500,
+				duration: 1000,
+				onComplete: () => {
+					player.setAlpha(1);
+					// Remove invulnerability after a delay
+					this.time.delayedCall(3000, () => {
+						player.isInvulnerable = false;
+						player.setImmovable(false);
+					});
+				}
+			});
+		}
+	}
+
+	decreaseLife = () => {
+		// Remove last heart from display
+		console.log('decreaseLife', this.hearts.length);
+		if (this.hearts.length > 0) {
+			console.log('decreaseLife', this.hearts.length);
+			const lastHeart = this.hearts.pop();
+			this.tweens.add({
+				targets: lastHeart,
+				scaleX: 0.25,
+				scaleY: 0.25,
+				duration: 200,
+				yoyo: true,
+				repeat: 1,
+				onComplete: () => {
+					lastHeart.destroy();
+				}
 			});
 		}
 	}
